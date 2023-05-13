@@ -9,9 +9,7 @@
   "scripts": {
     "install": "pip install -r requirements.txt"
   },
-  "scripts": {
-    "install": "pip install futures"
-  },
+
   "railway": {
     "envFiles": [ ".env" ]  
   },
