@@ -1,4 +1,4 @@
-itchat
+git+https://github.com/ccyet/Bing4wechat.git@main/itchat#egg=itchat
 EdgeGPT
 asyncio
 compiler
