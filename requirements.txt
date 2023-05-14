@@ -1,5 +1,6 @@
 itchat-uos==1.5.0.dev0
 EdgeGPT
 asyncio
-concurrent
-futures
+compiler
+concurrent.futures
+
