@@ -1,11 +1,12 @@
-FROM python:3.10-alpine
+FROM python:3.8
 
 WORKDIR /app
 
 COPY requirements.txt .
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -i https://mirrors.aliyun.com/pypi/simple -r requirements.txt
+pip check requirements.txt
 
 COPY . .
 
-CMD ["python", "app.py"]
+CMD ["python", "main.py"]
