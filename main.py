@@ -24,6 +24,8 @@ class weChat():
         itchat.auto_login(enableCmdQR = 1)
         # start message listener
         itchat.run()
+        #输出UUID
+        return 'https://login.weixin.qq.com/l/'+itchat.get_QRuuid() 
 
     def handle(self, msg):
         thread_pool.submit(self._do_send, msg['Text'],msg['FromUserName'])
