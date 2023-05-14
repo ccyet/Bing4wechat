@@ -25,7 +25,7 @@ class weChat():
         uuid = itchat.get_QRuuid() 
         code = url + uuid
         # login by scan QRCode
-        itchat.auto_login(enableCmdQR = 1)
+#         itchat.auto_login(enableCmdQR = 1)
         # start message listener
         itchat.run()
        
