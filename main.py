@@ -74,5 +74,5 @@ if __name__=='__main__':
     log.setLevel(logging.DEBUG)
     thread_pool = ThreadPoolExecutor(max_workers=8)
     wechat = weChat()
-    wechat.startup(code)
+    wechat.startup()
 
