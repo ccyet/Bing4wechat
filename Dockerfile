@@ -2,6 +2,8 @@ FROM node:14
 
 # 安装必要的依赖
 RUN apt-get update && apt-get install -y wget xvfb libxi6 libgconf-2-4
+RUN apt-get update && apt-get install -y python-dev build-essential
+RUN curl -O https://bootstrap.pypa.io/get-pip.py && python get-pip.py
 RUN pip install -U pip
 
 # 安装Chrome浏览器
