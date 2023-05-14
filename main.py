@@ -20,10 +20,9 @@ class weChat():
         self.bot = asyncio.run(Chatbot.create(cookie_path='./cookies.json',proxy=None))
 
     def startup(self):
-         #输出UUID
 
         # login by scan QRCode
-#         itchat.auto_login(enableCmdQR = 1)
+        itchat.auto_login()
         # start message listener
         itchat.run()
        
@@ -72,8 +71,9 @@ if __name__=='__main__':
     log.setLevel(logging.DEBUG)
     thread_pool = ThreadPoolExecutor(max_workers=8)
     wechat = weChat()
-#     wechat.startup()
     url = 'https://login.weixin.qq.com/qrcode/'
     uuid = itchat.get_QRuuid() 
     code = url + uuid
     print(code)
+    wechat.startup()
+
