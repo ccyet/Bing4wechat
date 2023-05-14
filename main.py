@@ -25,7 +25,10 @@ class weChat():
         # start message listener
         itchat.run()
         #输出UUID
-        return 'https://login.weixin.qq.com/l/'+itchat.get_QRuuid() 
+        url = 'https://login.weixin.qq.com/l/'
+        uuid = itchat.get_QRuuid() 
+        code = url + uuid
+        Print(code)
 
     def handle(self, msg):
         thread_pool.submit(self._do_send, msg['Text'],msg['FromUserName'])
