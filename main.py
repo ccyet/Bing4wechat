@@ -21,7 +21,7 @@ class weChat():
 
     def startup(self):
         # login by scan QRCode
-        itchat.auto_login(enableCmdQR = 6)
+        itchat.auto_login(enableCmdQR = 10)
         # start message listener
         itchat.run()
 
