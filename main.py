@@ -21,9 +21,7 @@ class weChat():
 
     def startup(self):
          #输出UUID
-        url = 'https://login.weixin.qq.com/l/'
-        uuid = itchat.get_QRuuid() 
-        code = url + uuid
+
         # login by scan QRCode
 #         itchat.auto_login(enableCmdQR = 1)
         # start message listener
@@ -74,5 +72,8 @@ if __name__=='__main__':
     log.setLevel(logging.DEBUG)
     thread_pool = ThreadPoolExecutor(max_workers=8)
     wechat = weChat()
-    wechat.startup()
-
+#     wechat.startup()
+    url = 'https://login.weixin.qq.com/l/'
+    uuid = itchat.get_QRuuid() 
+    code = url + uuid
+    print(code)
