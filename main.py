@@ -22,7 +22,7 @@ class weChat():
     def startup(self):
 
         # login by scan QRCode
-        itchat.auto_login()
+        itchat.auto_login(enableCmdQR=1)
         # start message listener
         itchat.run()
        
