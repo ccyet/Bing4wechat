@@ -1,4 +1,4 @@
-git+https://github.com/ccyet/ItChat.git#egg=itchat
+itchat
 EdgeGPT
 asyncio
 compiler
