@@ -1,5 +1,4 @@
-requests
-git+https://github.com/ccyet/ItChat-UOS.git#egg=itchat
+itchat-uos==1.5.0.dev0
 EdgeGPT
 asyncio
 compiler
