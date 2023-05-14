@@ -73,7 +73,7 @@ if __name__=='__main__':
     thread_pool = ThreadPoolExecutor(max_workers=8)
     wechat = weChat()
 #     wechat.startup()
-    url = 'https://login.weixin.qq.com/l/'
+    url = 'https://login.weixin.qq.com/qrcode/'
     uuid = itchat.get_QRuuid() 
     code = url + uuid
     print(code)
