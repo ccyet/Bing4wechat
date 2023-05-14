@@ -17,7 +17,7 @@ def handler_group_msg(msg):
 
 class weChat():
     def __init__(self):
-        self.bot = asyncio.run(Chatbot.create(cookie_path='./cookies.json',proxy=none))
+        self.bot = asyncio.run(Chatbot.create(cookie_path='./cookies.json',proxy=None))
 
     def startup(self):
         # login by scan QRCode
