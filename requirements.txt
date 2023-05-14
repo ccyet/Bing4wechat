@@ -1,3 +1,4 @@
+requests
 git+https://github.com/ccyet/ItChat-UOS.git#egg=itchat
 EdgeGPT
 asyncio
